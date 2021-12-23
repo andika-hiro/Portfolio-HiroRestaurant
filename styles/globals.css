@@ -1,16 +1,536 @@
-html,
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
 body {
+  background-color: whitesmoke;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
+.header {
+  width: 100%;
+  height: 680px;
+  background-size: 100% 887px;
+}
+
+.Navbar {
+  padding-left: 5rem;
+  display: flex;
+  width: 90%;
+}
+
+.listed {
+  width: 85%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-left: 2rem;
+}
+
+.logo {
+  font-family: "Oleo Script", cursive;
+  color: white;
+  font-size: 28px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.listNavbar {
+  color: white;
+  list-style: none;
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.listNavbar li {
+  padding-left: 2rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.webDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.textHeader {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 50rem;
+  padding-top: 2rem;
+}
+
+.textHeader h1 {
+  font-family: "Oleo Script", cursive;
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+
+.textHeader h4 {
+  width: 30rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.textHeader button {
+  border: 0px;
+  width: 169px;
+  height: 53px;
+  background-color: #e1651f;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* // styling about us */
+.aboutUsParent {
+  width: 100%;
+  overflow: hidden;
+}
+.aboutUs {
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  padding-top: 6rem;
+  padding-left: 5rem;
+  background-color: #ffff;
+}
+
+.imageaboutus {
+  width: 40%;
+}
+
+.aboutDesc {
+  width: 33%;
+  padding-left: 10rem;
+  padding-top: 1rem;
+}
+
+.aboutDesc h1 {
+  font-family: "Oleo Script", cursive;
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 0px;
+}
+
+.aboutDesc .p1 {
+  font-family: "Poppins", sans-serif;
+  color: #6a6a6a;
+  text-align: justify;
+  padding-top: 1.5rem;
+}
+
+.aboutDesc .p2 {
+  font-family: "Poppins", sans-serif;
+  color: #6a6a6a;
+  text-align: justify;
+  padding-top: 1.5rem;
+}
+
+/* // Our Menu */
+
+.ourmenu-container {
+  width: 100%;
+
+  min-height: 1471px;
+  background-color: #f5f5f5;
+}
+.ourmenu-title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7.5rem;
+}
+.ourmenu-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 700px;
+}
+
+.ourmenu-title h1 {
+  font-family: "Oleo Script", cursive;
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 0px;
+}
+
+.ourmenu-title h3 {
+  width: 527px;
+  color: #6a6a6a;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  width: 277px;
+  height: 430px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.card .stars {
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.desc-card {
+  padding-left: 1.5rem;
+}
+.card h1 {
+  font-family: "Oleo Script", cursive;
+  font-size: 24px;
+  margin-top: 0.2rem;
+  margin-bottom: 0rem;
+}
+
+.card h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0.2rem;
+  padding-top: 0.4rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.card h3 {
+  color: #6a6a6a;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 229px;
+  font-weight: 100;
+  padding-top: 0.8rem;
+}
+
+.ourmenu-card {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ourmenu-card-container {
+  display: flex;
+  width: 90%;
+  min-height: 890px;
+  flex-wrap: wrap;
+}
+
+.ourmenu-card-container .card {
+  margin-left: 3.5rem;
+  margin-top: 3rem;
+}
+
+/* // Services Page */
+
+.services {
+  width: 100%;
+  min-height: 962px;
+  background-color: #ffff;
+}
+
+.servicesTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.servicesTitle h1 {
+  font-family: "Oleo Script", cursive;
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 0px;
+}
+
+.servicesTitle h3 {
+  width: 527px;
+  color: #6a6a6a;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+
+.ourservices {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 74px;
+}
+.listServices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.listServices .cardServices {
+  width: 380px;
+  height: 222px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
+.listServices .cardServices h3 {
+  font-family: "Oleo Script", cursive;
+  font-size: 24px;
+  margin-top: 0.2rem;
+  margin-bottom: 0rem;
+}
+
+.listServices .cardServices p {
+  color: #6a6a6a;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+
+/* // Testimonials */
+
+.testi {
+  width: 100%;
+  min-height: 820px;
+  background-size: 100% 820px;
+}
+
+.titleTestiParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleTesti {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  padding-top: 2rem;
+}
+
+.titleTesti h1 {
+  font-family: "Oleo Script", cursive;
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 0px;
+  color: #ffff;
+}
+
+.titleTesti h3 {
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 200;
+  width: 527px;
+  font-family: "Poppins", sans-serif;
+}
+
+.testiCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffff;
+  width: 380px;
+  height: 415px;
+  text-align: center;
+  padding-top: 3rem;
+  border-radius: 5px;
+  margin-left: 2rem;
+}
+
+.testiCard .testiStars {
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.testiCardDesc {
+  width: 320px;
+  min-height: 161px;
+}
+
+.testiCardDesc h3 {
+  color: #6a6a6a;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+
+.testiCardDesc h2 {
+  font-family: "Oleo Script", cursive;
+  font-size: 24px;
+  color: #1c1c1c;
+  padding-top: 1rem;
+}
+
+.testiCardComponent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  flex-wrap: wrap;
+}
+
+.testiCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.serve {
+  max-width: 100%;
+  min-height: 23.438rem;
+}
+
+.containerServe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serveCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17.313rem;
+  padding-top: 7.906rem;
+}
+.serveCard h2 {
+  font-family: "Oleo Script", cursive;
+  color: white;
+  font-size: 3rem;
+  font-weight: 200;
+  margin: 0;
+  margin-bottom: 0.375rem;
+}
+
+.serveCard h3 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin: 0;
+  margin-bottom: 1.375rem;
+}
+
+.footer1 {
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: center;
+  padding-left: 7.219rem;
+  min-height: 28.688rem;
+  max-width: 100%;
+}
+
+.subfooter1 {
+  max-width: 23.938rem;
+  margin-right: 5.875rem;
+  min-height: 11.75rem;
+}
+
+.subfooter1 h1 {
+  font-family: "Oleo Script", cursive;
+  font-weight: 200;
+  font-size: 2.375rem;
+  color: white;
+  margin: 0;
+  margin-bottom: 1.875rem;
+}
+.subfooter1 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  max-width: 21.938rem;
+  color: #a4a4a4;
+}
+
+.subfooter2 {
+  max-width: 23.938rem;
+  margin-right: 5.875rem;
+  min-height: 11.75rem;
+}
+
+.subfooter2 h1 {
+  font-family: "Oleo Script", cursive;
+  font-weight: 200;
+  font-size: 2.375rem;
+  color: white;
+  margin: 0;
+  margin-bottom: 1.875rem;
+}
+
+.subfooter2 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  max-width: 21.938rem;
+  color: #a4a4a4;
+  margin-bottom: 0.875rem;
+}
+
+.subfooter3 {
+  max-width: 23.938rem;
+  margin-right: 3.875rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 11.75rem;
+}
+
+.subfooter3 h1 {
+  font-family: "Oleo Script", cursive;
+  font-weight: 200;
+  font-size: 2.375rem;
+  color: white;
+  margin: 0;
+  margin-bottom: 1.875rem;
+}
+
+.subfooter3 input {
+  width: 21.938rem;
+  height: 2.438rem;
+  border-radius: 0.2rem;
+  border: 0px;
+  background-color: #2c2c2c;
+  margin-bottom: 0.875rem;
+}
+
+.subfooter3 button {
+  width: 21.938rem;
+  height: 2.438rem;
+  border-radius: 0.2rem;
+  border: 0px;
+  background-color: #e1651f;
+  color: white;
+}
+
+.footer2 {
+  background-color: #2c2c2c;
+  max-width: 100%;
+  height: 5.375rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
+
+.footer2 p {
+  margin: 0;
+  color: white;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
